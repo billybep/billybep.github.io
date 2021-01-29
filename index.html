@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h4>Bermain dengan Angka</h4>
+            <p>Score-mu semakin berkurang saat tebakanmu Salah</p>
+            <p>Aturannya simpel kok, angka dalam kotak hanya diantara angka 1 sampai 10 </p>
+        </div>
+        <div class="box-2">
+            <!-- <h3>Highscore : <span class="highscore">100</span></h3> -->
+            <h3>Score : <span id="score" class="score">100</span></h3>
+        </div>
+    </div>
+
+    <div class="container-1">
+        <div class="box-0">
+            <h1>TEBAK ANGKA</h1>
+        </div>
+    </div>
+
+    <div class="container-1">
+        <div class="box-2">
+            
+        </div>
+        <div class="box-3">
+            <img class="square" src="./img/misteriuoseBox-0.png" alt="misterious box">
+        </div>
+        <div class="box-2">
+            
+        </div>
+    </div>
+
+    <div class="container-1 box-bawah">
+        <div class="box-2 bawah">
+            <button class="btn-check btn-1">CHECK!</button>
+            <input id="tebak-angka" type="number" class="tebak-angka" min="1" max='10'>
+        </div>
+        <div class="box-2 bawah">
+            <p id="notif" class="notif">ayoo tebaklah angka dalam kotak diatas ....</p>
+        </div>
+        <div class="box-2 bawah">
+            <button id="again" class="lagi">Bermain Lagi?</button>
+            <button id="exit" class="exit" onclick="window.location.href='log-out.html';">Exit</button>
+        </div>
+    </div>
+
+    <!-- ################################## MODAL ################################## -->
+    <!-- Trigger/Open The Modal -->
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Kamu Menang</p>
+            <p>SCORE MU adalah</p>
+            <p id="total-score" class="total-score">100</p>
+        </div>
+
+    </div>
+    <!-- ########################################################################### -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
